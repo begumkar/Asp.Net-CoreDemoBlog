@@ -1,0 +1,17 @@
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\BusinnesLayer.deps.json
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\BusinnesLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\ref\BusinnesLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\BusinnesLayer.pdb
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.AssemblyInfo.cs
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.csproj.CopyComplete
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\ref\BusinnesLayer.dll
+C:\Users\HP\source\repos\CoreDemoBlog\BusinnesLayer\obj\Debug\net5.0\BusinnesLayer.pdb
