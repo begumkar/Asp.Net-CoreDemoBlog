@@ -13,10 +13,6 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfBlogRepository : GenericRepository<Blog>, IBlogDal
     {
-        public List<Blog> GetListWithByWriter(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public List<Blog> GetListWithCategory()
         {
@@ -24,6 +20,15 @@ namespace DataAccessLayer.EntityFramework
             {
 
                 return c.Blog.Include(x => x.Category).ToList();
+            }
+        }
+
+        public List<Blog> GetListWithCategoryByWriter(int id)
+        {
+            using (var c = new Context())
+            {
+
+                return c.Blog.Include(x => x.Category).Where(x=>x.WriterId==id).ToList();
             }
         }
     }

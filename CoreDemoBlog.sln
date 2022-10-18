@@ -5,13 +5,15 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreDemoBlog", "CoreDemoBlog\CoreDemoBlog.csproj", "{EC97C2EB-F0A0-44AD-AD55-6C559F922E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{B7F52239-8F3F-402E-B7AA-FF8CB7D0B063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{B7F52239-8F3F-402E-B7AA-FF8CB7D0B063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{483E8299-BB34-4290-A054-916564F19B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{483E8299-BB34-4290-A054-916564F19B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinnesLayer", "BusinnesLayer\BusinnesLayer.csproj", "{9230B496-85EB-4C75-AC7C-1AADA0C6F0CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinnesLayer", "BusinnesLayer\BusinnesLayer.csproj", "{9230B496-85EB-4C75-AC7C-1AADA0C6F0CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{8885EBD1-0D6F-45A4-80D9-67DFE4933FFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{8885EBD1-0D6F-45A4-80D9-67DFE4933FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApiDemo", "BlogApiDemo\BlogApiDemo.csproj", "{B387432E-DC34-427A-8F28-D6BCE11E2E6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8885EBD1-0D6F-45A4-80D9-67DFE4933FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8885EBD1-0D6F-45A4-80D9-67DFE4933FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8885EBD1-0D6F-45A4-80D9-67DFE4933FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B387432E-DC34-427A-8F28-D6BCE11E2E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B387432E-DC34-427A-8F28-D6BCE11E2E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B387432E-DC34-427A-8F28-D6BCE11E2E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B387432E-DC34-427A-8F28-D6BCE11E2E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

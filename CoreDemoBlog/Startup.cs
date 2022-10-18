@@ -1,7 +1,10 @@
+using DataAccessLayer.Concreate;
+using EntityLayer.Concreate;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +29,13 @@ namespace CoreDemoBlog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<Context>();
+            services.AddIdentity<AppUser, AppRole>(x =>
+            {
+                x.Password.RequireNonAlphanumeric = false;
+                x.Password.RequireUppercase = false;
+
+            }).AddEntityFrameworkStores<Context>();
             services.AddControllersWithViews();
 
             services.AddSession();
@@ -38,7 +48,7 @@ namespace CoreDemoBlog
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
 
-            services.AddMvc();
+            services.AddMvc(); 
             services.AddAuthentication(
                 CookieAuthenticationDefaults.AuthenticationScheme)
                     .AddCookie(x=>
@@ -46,6 +56,16 @@ namespace CoreDemoBlog
                         x.LoginPath = "/Login/Index";
                     }
             );
+            services.ConfigureApplicationCookie(options =>
+            {
+                //Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(150);
+                options.AccessDeniedPath = new PathString("/Login/AccesDenied");
+                options.LoginPath = "/Login/Index/";
+                options.SlidingExpiration = true;
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,6 +98,10 @@ namespace CoreDemoBlog
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+          );
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

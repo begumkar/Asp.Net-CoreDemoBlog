@@ -7,7 +7,7 @@ namespace DataAccessLayer.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "NewsLetter",
+        name: "NewsLetter",
                 columns: table => new
                 {
                     MailID = table.Column<int>(type: "int", nullable: false).Annotation("SqlServer:Identity", "1,1"),

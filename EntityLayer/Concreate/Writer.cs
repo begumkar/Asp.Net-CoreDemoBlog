@@ -24,5 +24,7 @@ namespace EntityLayer.Concreate
 
         public bool WriterStatus { get; set; }
         public List<Blog> Blog { get; set; }
+        public virtual ICollection<Message2> WriterSender { get; set; }
+        public virtual ICollection<Message2> WriterReceiver { get; set; }
     }
 }
